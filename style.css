@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+.fa_h1 {
+    margin-top: 40px;
+}
+
+@keyframes firstanimation {
+    0%{
+        background-color: aqua;
+        width: 150px;
+        height: 150px;
+        left: -200px;
+        top: 0;
+    }
+
+    12.5%{
+        background-color: pink;
+        width: 150px;
+        height: 150px;
+        left: 200px;
+        top: 0;
+    }
+
+    25%{
+        background-color: black;
+        width: 150px;
+        height: 150px;
+        left: 200px;
+        top: 200px;
+    }
+
+    37.5%{
+        background-color: orange;
+        width: 150px;
+        height: 150px;
+        left: -200px;
+        top: 200px;
+    }
+
+    50%{
+        background-color: red;
+        width: 150px;
+        height: 150px;
+        left: -200px;
+        top: 0;
+    }
+
+    62.5%{
+        background-color: pink;
+        width: 150px;
+        height: 150px;
+        left: 200px;
+        top: 0;
+    }
+
+    75%{
+        background-color: black;
+        width: 150px;
+        height: 150px;
+        left: 200px;
+        top: 200px;
+    }
+
+    87.5%{
+        background-color: orange;
+        width: 150px;
+        height: 150px;
+        left: -200px;
+        top: 200px;
+    }
+
+    100%{
+        background-color: aqua;
+        width: 150px;
+        height: 150px;
+        left: -200px;
+        top: 0;
+    }
+}
+
+.fa_box {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background-color: aqua;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    animation-name: firstanimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.secondanimation {
+    margin-top: 350px;
+}
+
+@keyframes secondanimation {
+    0%{
+        width: 200px;
+        height: 200px;
+        border-radius: 0;
+        background-color: blue;
+        top: 0;
+        margin-bottom: 260px;
+    }
+
+    100%{
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: red;
+        top: 50px;
+        margin-bottom: 440px;
+    }
+}
+
+.sa_box {
+    width: 200px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    position: relative;
+    background-color: blue;
+    animation-name: secondanimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.thirdanimation {
+    padding: 0 400px;
+}
+
+@keyframes thirdanimation1-1 {
+    0%{
+        top: 1200px;
+        left: 400px;
+    }
+
+    100%{
+        top: 1200px;
+        left: 400px;
+    }
+}
+
+@keyframes thirdanimation1-2 {
+    0%{
+        top: 1200px;
+        left: 400px;
+    }
+
+    100%{
+        top: 1225px;
+        left: 425px;
+    }
+}
+
+@keyframes thirdanimation1-3 {
+    0%{
+        top: 1200px;
+        left: 400px;
+    }
+
+    100%{
+        top: 1250px;
+        left: 450px;
+    }
+}
+
+.ta {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.ta_h1 {
+    margin-bottom: 20px;
+}
+
+.firstbox {
+    opacity: 33%;
+    animation-name: thirdanimation1-1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.secondbox {
+    opacity: 67%;
+    animation-name: thirdanimation1-2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 1;
+}
+
+.thirdbox {
+    opacity: 100%;
+    animation-name: thirdanimation1-3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 2;
+}
+
+@keyframes secondboxes {
+    0%{
+        margin-top: 260px;
+    }
+
+    100%{
+        margin-top: 260px;
+    }
+}
+
+.ta_secondboxes {
+    animation-name: secondboxes;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.ta2 {
+    width: 100px;
+    height: 100px;
+    background-color: hotpink;
+    border-radius: 5px;
+    position: absolute;
+}
+
+@keyframes thirdanimation2-1 {
+    0%{
+        top: 1200px;
+        left: 700px;
+        transform: rotate(0);
+    }
+
+    100%{
+        top: 1200px;
+        left: 700px;
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes thirdanimation2-2 {
+    0%{
+        top: 1200px;
+        left: 700px;
+        transform: rotate(0);
+    }
+
+    100%{
+        top: 1190px;
+        left: 720px;
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes thirdanimation2-3 {
+    0%{
+        top: 1200px;
+        left: 700px;
+        transform: rotate(0);
+    }
+
+    100%{
+        top: 1185px;
+        left: 730px;
+        transform: rotate(35deg);
+    }
+}
+
+.firstbox2 {
+    opacity: 33%;
+    animation-name: thirdanimation2-1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.secondbox2 {
+    opacity: 67%;
+    animation-name: thirdanimation2-2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.thirdbox2 {
+    opacity: 100%;
+    animation-name: thirdanimation2-3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.ta3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: lightgreen;
+    position: absolute;
+}
+
+@keyframes thirdanimation3-1 {
+    0%{
+        top: 1200px;
+        left: 1000px;
+    }
+
+    100%{
+        top: 1200px;
+        left: 1000px;
+    }
+}
+
+@keyframes thirdanimation3-2 {
+    0%{
+        top: 1200px;
+        left: 1000px;
+    }
+
+    100%{
+        top: 1200px;
+        left: 975px;
+    }
+}
+
+@keyframes thirdanimation3-3 {
+    0%{
+        top: 1200px;
+        left: 1000px;
+    }
+
+    100%{
+        top: 1200px;
+        left: 950px;
+    }
+}
+
+.firstbox3 {
+    opacity: 33%;
+    animation-name: thirdanimation3-1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.secondbox3 {
+    opacity: 67%;
+    animation-name: thirdanimation3-2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.thirdbox3 {
+    opacity: 100%;
+    animation-name: thirdanimation3-3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.forthanimation {
+    margin-top: 350px;
+}
+
+.fa {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: lawngreen;
+    position: absolute;
+}
+
+@keyframes forthanimation1-1 {
+    0%{
+        top: 1700px;
+        left: 400px;
+    }
+
+    100% {
+        top: 1640px;
+        left: 400px;;
+    }
+}
+
+@keyframes forthanimation1-2 {
+    0%{
+        top: 1700px;
+        left: 400px;
+    }
+
+    100%{
+        top: 1670px;
+        left: 400px;
+    }
+}
+
+@keyframes forthanimation1-3 {
+    0%{
+        top: 1700px;
+        left: 400px;
+    }
+
+    100%{
+        top: 1700px;
+        left: 400px;
+    }
+}
+
+@keyframes forthanimation1-4 {
+    0%{
+        top: 1700px;
+        left: 400px;
+    }
+
+    100%{
+        top: 1730px;
+        left: 400px;
+    }
+}
+
+.mtop {
+    margin-top: 400px;
+}
+
+.ffirstbox {
+    opacity: 100%;
+    animation-name: forthanimation1-1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.fsecondbox {
+    opacity: 60%;
+    animation-name: forthanimation1-2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.fthirdbox {
+    opacity: 40%;
+    animation-name: forthanimation1-3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.fforthbox {
+    opacity: 20%;
+    animation-name: forthanimation1-4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.fa2 {
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    border-radius: 10px;
+    position: absolute;
+}
+
+@keyframes forthanimation2-1 {
+    0%{
+        top: 1700px;
+        left: 700px;
+    }
+
+    100%{
+        top: 1700px;
+        left: 700px;
+    }
+}
+
+@keyframes forthanimation2-2 {
+    0%{
+        top: 1700px;
+        left: 700px;
+        transform: rotate(0);
+    }
+
+    100%{
+        top: 1685px;
+        left: 725px;
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes forthanimation2-3 {
+    0%{
+        top: 1700px;
+        left: 700px;
+        transform: rotate(0)
+    }
+
+    100% {
+        top: 1685px;
+        left: 750px;
+        transform: rotate(40deg);
+    }
+}
+
+@keyframes forthanimation2-4 {
+    0%{
+        top: 1700px;
+        left: 700px;
+        transform: rotate(0);
+    }
+
+    100%{
+        top: 1685px;
+        left: 770px;
+        transform: rotate(60deg)
+    }
+}
+
+.ffirstbox2 {
+    opacity: 20%;
+    animation-name: forthanimation2-1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.fsecondbox2 {
+    opacity: 40%;
+    animation-name: forthanimation2-2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.fthirdbox2 {
+    opacity: 60%;
+    animation-name: forthanimation2-3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.fforthbox2 {
+    opacity: 100%;
+    animation-name: forthanimation2-4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.fa3 {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 10px;
+    position: absolute;
+}
+
+@keyframes forthanimation3-1 {
+    0%{
+        top: 1640px;
+        left: 1000px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    100%{
+        top: 1640px;
+        left: 1000px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@keyframes forthanimation3-2 {
+    0%{
+        top: 1640px;
+        left: 1000px;
+        width: 100px;
+        height: 100px;
+    }
+
+    100%{
+        top: 1640px;
+        left: 1000px;
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@keyframes forthanimation3-3 {
+    0%{
+        top: 1640px;
+        left: 1000px;
+        width: 100px;
+        height: 100px;
+    }
+
+    100%{
+        top: 1640px;
+        left: 1000px;
+        width: 140px;
+        height: 140px;
+    }
+}
+
+.ffirstbox3 {
+    opacity: 100%;
+    animation-name: forthanimation3-1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.fsecondbox3 {
+    opacity: 50%;
+    animation-name: forthanimation3-2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.fthirdbox3 {
+    opacity: 25%;
+    animation-name: forthanimation3-3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
